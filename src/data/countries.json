@@ -1,0 +1,37 @@
+{
+    "countries": [
+        {
+            "name": "AUD"
+        },
+        {
+            "name": "CAD"
+        },
+        {
+            "name": "CNY"
+        },
+        {
+            "name": "CZK"
+        },
+        {
+            "name": "DKK"
+        },
+        {
+            "name": "EUR"
+        },
+        {
+            "name": "GBP"
+        },
+        {
+            "name": "JPY"
+        },
+        {
+            "name": "NOK"
+        },
+        {
+            "name": "NZD"
+        },
+        {
+            "name": "USD "
+        }
+    ]
+}

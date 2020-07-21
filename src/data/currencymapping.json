@@ -1,0 +1,151 @@
+{
+    "mapping": [
+        {
+            "source": "AUD",
+            "target": "USD",
+            "base": "D"
+        },
+        {
+            "source": "CAD",
+            "target": "USD",
+            "base": "D"
+        },
+        {
+            "source": "CNY",
+            "target": "USD",
+            "base": "D"
+        },
+        {
+            "source": "CZK",
+            "target": "DKK",
+            "base": "EUR"
+        },
+        {
+            "source": "CZK",
+            "target": "USD",
+            "base": "EUR"
+        },
+        {
+            "source": "DKK",
+            "target": "CZK",
+            "base": "EUR"
+        },
+        {
+            "source": "DKK",
+            "target": "NOK",
+            "base": "EUR"
+        },
+        {
+            "source": "DKK",
+            "target": "USD",
+            "base": "EUR"
+        },
+        {
+            "source": "DKK",
+            "target": "EUR",
+            "base": "Inv"
+        },
+        {
+            "source": "EUR",
+            "target": "CZD",
+            "base": "D"
+        },
+        {
+            "source": "EUR",
+            "target": "DKK",
+            "base": "D"
+        },
+        {
+            "source": "EUR",
+            "target": "NOK",
+            "base": "D"
+        },
+        {
+            "source": "EUR",
+            "target": "USD",
+            "base": "D"
+        },
+        {
+            "source": "GBP",
+            "target": "USD",
+            "base": "D"
+        },
+        {
+            "source": "JPY",
+            "target": "USD",
+            "base": "Inv"
+        },
+        {
+            "source": "NOK",
+            "target": "CZK",
+            "base": "EUR"
+        },
+        {
+            "source": "NOK",
+            "target": "DKK",
+            "base": "EUR"
+        },
+        {
+            "source": "NOK",
+            "target": "EUR",
+            "base": "Inv"
+        },
+        {
+            "source": "NOK",
+            "target": "USD",
+            "base": "EUR"
+        },
+        {
+            "source": "USD",
+            "target": "AUD",
+            "base": "Inv"
+        },
+        {
+            "source": "USD",
+            "target": "CAD",
+            "base": "Inv"
+        },
+        {
+            "source": "USD",
+            "target": "CNY",
+            "base": "Inv"
+        },
+        {
+            "source": "USD",
+            "target": "CZK",
+            "base": "EUR"
+        },
+        {
+            "source": "USD",
+            "target": "DKK",
+            "base": "EUR"
+        },
+        {
+            "source": "USD",
+            "target": "EUR",
+            "base": "Inv"
+        },
+        {
+            "source": "USD",
+            "target": "GBP",
+            "base": "Inv"
+        }
+        ,
+        {
+            "source": "USD",
+            "target": "JPY",
+            "base": "D"
+        },
+        {
+            "source": "USD",
+            "target": "NOK",
+            "base": "EUR"
+        },
+        {
+            "source": "USD",
+            "target": "NZD  ",
+            "base": "Inv"
+        }
+        
+    ]
+}

@@ -1,0 +1,52 @@
+[
+    {
+        "source": "AUD",
+        "rate": "0.8371",
+        "target": "USD"
+    },
+    {
+        "source": "CAD",
+        "rate": "0.8711",
+        "target": "USD"
+    },
+    {
+        "source": "USD",
+        "rate": "6.1715",
+        "target": "CNY"
+    },
+    {
+        "source": "EUR",
+        "rate": "1.2315",
+        "target": "USD"
+    },
+    {
+        "source": "GBP",
+        "rate": "1.5683",
+        "target": "USD"
+    },
+    {
+        "source": "NZD",
+        "rate": "0.7750",
+        "target": "USD"
+    },
+    {
+        "source": "USD",
+        "rate": "119.95",
+        "target": "JPY"
+    },
+    {
+        "source": "EUR",
+        "rate": "27.6028",
+        "target": "CZK"
+    },
+    {
+        "source": "EUR",
+        "rate": "7.4405",
+        "target": "DKK"
+    },
+    {
+        "source": "EUR",
+        "rate": "8.6651",
+        "target": "NOK"
+    }
+]
