@@ -19,3 +19,11 @@ label {
   margin: 0 10px;
   color: #fff;
 }
+
+.showErrDV{
+  display: block;
+  color: orangered;
+}
+.hideErrDV{
+  display: none;
+}

@@ -6,12 +6,13 @@ export const Calculator = () => {
     const [to, setTo] = useState("AUD");
     const [baseRate, setBaseRate] = useState(0);
     const [amount, setAmount] = useState(0);
-
+    const [errorMsg, seterrorMsg] = useState(false);
     const onSourceCurrencyChange = (e) => {
         const fromValue = e.target.value;
         let rate = 1;
         if (fromValue !== to) {
             rate = Utils.convertRates(fromValue, to);
+            seterrorMsg(rate === 0);
         }
         setFrom(fromValue);
         setBaseRate(rate);
@@ -23,6 +24,7 @@ export const Calculator = () => {
         let rate = 1;
         if (from !== toValue) {
             rate = Utils.convertRates(from, toValue);
+            seterrorMsg(rate === 0);
         }
         setTo(toValue);
         setBaseRate(rate);
@@ -54,6 +56,9 @@ export const Calculator = () => {
                     {getCountryOptions(Countries.countries)}
                 </select>
                 <label htmlFor="txtConvAmount">Amount</label> <input data-testid="txtConvAmount" readOnly type="number" value={amount}></input>
+            </div>
+            <div id="dvError" className={errorMsg ? 'showErrDV' : 'hideErrDV'}>
+                <span>Conversion not available!!</span>
             </div>
         </div>
     );
