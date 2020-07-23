@@ -4,7 +4,7 @@ body {
 
 .maindv {
   text-align: center;
-  width: 430px;
+  width: 480px;
   margin-top: 100px;
   margin: 90px auto;
   padding: 15px;
@@ -13,6 +13,10 @@ body {
 
 .row {
   margin-bottom: 10px;
+}
+
+.rowFirst{
+    margin-left: -43px;
 }
 
 label {
@@ -26,4 +30,8 @@ label {
 }
 .hideErrDV{
   display: none;
+}
+
+.txtControl{
+  float: right;
 }
