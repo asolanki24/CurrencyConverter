@@ -11,8 +11,8 @@ describe("Source Amount change", () => {
   it("Source Amount Changes", () => {
     const { queryByTestId } = render(<Calculator />);
     const sourceInput = queryByTestId("txtAmount");
-    fireEvent.change(sourceInput, { target: { value: '10' } });
-    expect(sourceInput.value).toBe('10');
+    fireEvent.change(sourceInput, { target: { value:"10" } });
+    expect(sourceInput.value).toBe("10");
   });
 });
 

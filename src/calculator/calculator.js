@@ -7,6 +7,7 @@ export const Calculator = () => {
     const [baseRate, setBaseRate] = useState(0);
     const [amount, setAmount] = useState(0);
     const [errorMsg, seterrorMsg] = useState(false);
+    const [srcAmount, setSrcAmount] = useState(0);
     const onSourceCurrencyChange = (e) => {
         const fromValue = e.target.value;
         let rate = 1;
@@ -17,8 +18,10 @@ export const Calculator = () => {
         setFrom(fromValue);
         setBaseRate(rate);
         setAmount(0);
+        setSrcAmount(0);
 
     }
+    
     const onTargetCurrencyChange = (e) => {
         const toValue = e.target.value;
         let rate = 1;
@@ -29,10 +32,12 @@ export const Calculator = () => {
         setTo(toValue);
         setBaseRate(rate);
         setAmount(0);
+        setSrcAmount(0);
     }
     const calculateAmount = (e) => {
         const finalAmount = (baseRate * e.target.value).toFixed(2);
         setAmount(finalAmount);
+        setSrcAmount(e.target.value);
     }
     const getCountryOptions = (countries) => {
         return countries.map((country) => {
@@ -45,10 +50,10 @@ export const Calculator = () => {
         <div className="maindv">
             <div className="row">
                 <label htmlFor="sourceCurrSeelct">Source :</label>
-                <select data-testid="sourceCurrSeelct" onChange={(e) => onSourceCurrencyChange(e)}>
+                <select data-testid="sourceCurrSeelct"  onChange={(e) => onSourceCurrencyChange(e)}>
                     {getCountryOptions(Countries.countries)}
                 </select>
-                <label htmlFor="txtAmount">Amount</label><input data-testid="txtAmount" type="number" onChange={(e) => calculateAmount(e)}></input>
+                <label htmlFor="txtAmount">Amount</label><input value={srcAmount} data-testid="txtAmount" type="number" onChange={(e) => calculateAmount(e)}></input>
             </div>
             <div className="row">
                 <label htmlFor="currToConvertSelect">Target  : </label>
